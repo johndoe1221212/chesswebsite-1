@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mass Chess</title>
+
+  <!-- Chessboard.js CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.css" />
+
+  <style>
+    body {
+      margin: 0;
+      background-color: #121212;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    #board {
+      max-width: 480px;
+      width: 90vw;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="board"></div>
+
+  <!-- Chessboard.js JS -->
+  <script src="https://unpkg.com/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.js"></script>
+
+  <!-- Initialize Board -->
+  <script>
+    const board = Chessboard('board', {
+      position: 'start',
+      draggable: false
+    });
+  </script>
+</body>
+</html>
