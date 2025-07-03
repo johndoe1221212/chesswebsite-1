@@ -1,37 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Chessboard Test</title>
-  <link rel="stylesheet" href="https://unpkg.com/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.css" />
-  <style>
-    body {
-      margin: 0;
-      background: #121212;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
-    #board {
-      width: 480px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Chessboard</title>
+
+    <!-- Include Chessboard.js Styles -->
+    <link rel="stylesheet" href="https://unpkg.com/chessboardjs/dist/chessboard-1.0.0.min.css">
+
+    <style>
+        /* Center the chessboard on the page */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f5f5f5;
+        }
+
+        /* Chessboard container style */
+        #board1 {
+            width: 400px;
+            height: 400px;
+        }
+    </style>
 </head>
 <body>
-  <div id="board"></div>
 
-  <script src="https://unpkg.com/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.js"></script>
-  <script>
-    window.onload = function() {
-      Chessboard('board', {
-        position: 'start',
-        draggable: false
-      });
-    };
-  </script>
+    <!-- Chessboard container -->
+    <div id="board1"></div>
+
+    <!-- Include Chessboard.js Library -->
+    <script src="https://unpkg.com/chessboardjs/dist/chessboard-1.0.0.min.js"></script>
+
+    <script>
+        // Initialize the chessboard
+        const board = Chessboard('board1');
+
+        // You can set the board to a specific starting position
+        board.start();
+
+        // Optionally, you can make the board interactable
+        // For example, allowing the user to drag and drop pieces:
+        // board.draggablePieces(true);
+
+        // You can use methods like:
+        // board.clear(); // To clear the board
+        // board.position('start'); // Reset to the starting position
+    </script>
+
 </body>
 </html>
+
 
 
