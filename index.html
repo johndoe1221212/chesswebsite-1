@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interactive Chessboard</title>
 
-    <!-- Include Chessboard.js Styles -->
-    <link rel="stylesheet" href="https://unpkg.com/chessboardjs/dist/chessboard-1.0.0.min.css">
+    <!-- Link to Local Chessboard.js CSS -->
+    <link rel="stylesheet" href="github/chessboard-1.0.0.min.css">
 
     <style>
         /* Center the chessboard on the page */
@@ -31,23 +31,15 @@
     <!-- Chessboard container -->
     <div id="board1"></div>
 
-    <!-- Include Chessboard.js Library -->
-    <script src="https://unpkg.com/chessboardjs/dist/chessboard-1.0.0.min.js"></script>
+    <!-- Link to Local Chessboard.js JavaScript -->
+    <script src="github/chessboard-1.0.0.min.js"></script>
 
     <script>
         // Initialize the chessboard
         const board = Chessboard('board1');
 
-        // You can set the board to a specific starting position
+        // Start the chessboard with the default position
         board.start();
-
-        // Optionally, you can make the board interactable
-        // For example, allowing the user to drag and drop pieces:
-        // board.draggablePieces(true);
-
-        // You can use methods like:
-        // board.clear(); // To clear the board
-        // board.position('start'); // Reset to the starting position
     </script>
 
 </body>
