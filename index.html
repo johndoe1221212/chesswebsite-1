@@ -14,20 +14,24 @@
       align-items: center;
       height: 100vh;
     }
-    #board { width: 480px; }
+    #board {
+      width: 480px;
+    }
   </style>
 </head>
 <body>
   <div id="board"></div>
+
   <script src="https://unpkg.com/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.js"></script>
   <script>
     window.onload = function() {
-      const board = Chessboard('board', {
+      Chessboard('board', {
         position: 'start',
         draggable: false
       });
-    }
+    };
   </script>
 </body>
 </html>
+
 
